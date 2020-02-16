@@ -1,0 +1,89 @@
+//scss file that is for all the nodes
+
+//includes all their components; top bar, scroll, content, buttons, etc
+
+.node {
+    position: absolute;
+    background: #cdcdcd;
+
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+    resize: both;
+
+
+    &.minimized {
+        width: 30px;
+        height: 30px;
+    }
+
+    .top {
+        background: #232323;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .content {
+        padding: 10px 20px;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+    .title{
+        text-align: center
+    }
+
+    .scroll-box {
+        overflow-y: scroll;
+        height: calc(100% - 20px);
+    }
+
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .web{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn {
+        z-index: 10000;
+        position:relative;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    
+        display:inline-block;
+        padding:0.35em 0.5em;
+        border:0.1em solid #FFFFFF;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Roboto',sans-serif;
+        font-weight:500;
+        color: black;
+        text-align:center;
+        transition: all 0.2s;
+        font-size: 12;
+    }
+    .btn:hover{
+        color: white;
+        background-color: black;
+    }
+    @media all and (max-width:30em){
+        a.button1{
+            display:block;
+            margin:0.4em auto;
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+//this is the scss for the imported editor
+body {
+    background: #f3f1f2;
+    font-family: sans-serif;
+  }
+  
+  .richText .ql-container {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background: #fefcfc;
+  }
+  .richText .ql-snow.ql-toolbar {
+    display: block;
+    background: #eaecec;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  .richText .ql-editor {
+    min-height: 18em;
+  }
